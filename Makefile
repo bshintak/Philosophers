@@ -6,7 +6,7 @@
 #    By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/28 12:19:31 by bshintak          #+#    #+#              #
-#    Updated: 2022/08/02 15:58:05 by bshintak         ###   ########.fr        #
+#    Updated: 2022/08/16 16:26:20 by bshintak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,8 @@ MKD			=	mkdir
 RM			=	rm -f
 
 SRC_NAME	=	init.c			\
-				philosophers.c
+				philosophers.c	\
+				utils.c
 				
 SRCS		=	$(addprefix $(SRC_PATH)/, $(SRC_NAME))
 OBJS		=	$(patsubst $(SRC_PATH)/%.c, $(OBJ_PATH)/%.o, $(SRCS))
