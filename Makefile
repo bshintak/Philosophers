@@ -6,7 +6,7 @@
 #    By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/28 12:19:31 by bshintak          #+#    #+#              #
-#    Updated: 2022/08/16 16:26:20 by bshintak         ###   ########.fr        #
+#    Updated: 2022/08/17 16:25:58 by bshintak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ $(VERBOSE).SILENT:
 
 NAME		=	philosophers
 CC			=	gcc
-CFLAGS		=	-Wall -Werror -Wextra
+CFLAGS		=	-Wall -Werror -Wextra -fsanitize=address
 PHI_FLAG	=	-lpthread
 MKD			=	mkdir
 RM			=	rm -f
