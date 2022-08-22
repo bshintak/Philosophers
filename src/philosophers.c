@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 12:18:42 by bshintak          #+#    #+#             */
-/*   Updated: 2022/08/22 14:32:02 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/08/22 14:46:51 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,11 @@ int	main(int argc, char **argv)
 {
 	t_philo	wtv;
 
+	if (check_is_valid(argv) == 1)
+	{
+		printf("\033[;31mINVALID ARGUMENTS!\033[0m\n");
+		return (0);
+	}
 	if (argc != 5 && argc != 6)
 	{
 		printf("\033[;31mWRONG NUMBER OF ARGUMENTS!\033[0m\n");
@@ -25,16 +30,7 @@ int	main(int argc, char **argv)
 		printf("\033[1;35m%s\n\033[0m", FIFTH_ARG);
 		return (0);
 	}
-	else if (check_is_valid(argv) == 1)
-	{
-		printf("\033[;31mINVALID ARGUMENTS!\033[0m\n");
-		return (0);
-	}
-	// else
-	// {
-		printf("%lld\n", getting_time());
-		separate_arguments(&wtv, argc, argv);
-		init_fork_mutex(&wtv);
-		// create_threads(&wtv);
-	// }
+	printf("%lld\n", getting_time());
+	separate_arguments(&wtv, argc, argv);
+	init_fork_mutex(&wtv);
 }

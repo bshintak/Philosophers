@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/16 16:12:11 by bshintak          #+#    #+#             */
-/*   Updated: 2022/08/22 14:29:03 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/08/22 14:45:14 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	check_is_valid(char **argv)
 	int	i;
 	int	j;
 
-	i = 0;
+	i = 1;
 	while (argv[i])
 	{
 		j = 0;
