@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/16 16:12:11 by bshintak          #+#    #+#             */
-/*   Updated: 2022/08/22 14:45:14 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/08/23 14:37:01 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,4 +51,5 @@ long long	getting_time(void)
 
 	gettimeofday(&time, NULL);
 	return ((time.tv_sec * 1000) + (time.tv_usec / 1000));
+	// return (time.tv_sec);
 }
