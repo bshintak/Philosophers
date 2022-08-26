@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 12:18:42 by bshintak          #+#    #+#             */
-/*   Updated: 2022/08/23 13:44:04 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/08/26 16:51:15 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,7 @@ int	main(int argc, char **argv)
 		printf("\033[1;35m%s\n\033[0m", FIFTH_ARG);
 		return (0);
 	}
-	// printf("%lld\n", getting_time());
 	separate_arguments(&wtv, argc, argv);
-	//init_philo(&wtv);
-	// init_fork_mutex(&wtv);
 	create_threads(&wtv);
+	// death_check(&wtv);
 }

@@ -6,7 +6,7 @@
 #    By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/28 12:19:31 by bshintak          #+#    #+#              #
-#    Updated: 2022/08/23 11:14:16 by bshintak         ###   ########.fr        #
+#    Updated: 2022/08/26 16:49:51 by bshintak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ RM			=	rm -f
 
 SRC_NAME	=	init.c			\
 				philosophers.c	\
+				checker.c		\
 				utils.c
 				
 SRCS		=	$(addprefix $(SRC_PATH)/, $(SRC_NAME))
