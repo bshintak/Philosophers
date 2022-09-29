@@ -6,7 +6,7 @@
 #    By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/28 12:19:31 by bshintak          #+#    #+#              #
-#    Updated: 2022/08/26 16:49:51 by bshintak         ###   ########.fr        #
+#    Updated: 2022/09/29 15:18:27 by bshintak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,15 +14,20 @@ $(VERBOSE).SILENT:
 
 NAME		=	philosophers
 CC			=	gcc
-CFLAGS		=	-Wall -Werror -Wextra -fsanitize=address
+CFLAGS		=	-Wall -Werror -Wextra -fsanitize=address -g
 PHI_FLAG	=	-lpthread
 MKD			=	mkdir
 RM			=	rm -f
 
-SRC_NAME	=	init.c			\
+SRC_NAME	=	args_checker.c	\
+				death_checker.c	\
+				eat_checker.c	\
+				finish.c		\
+				init.c			\
 				philosophers.c	\
-				checker.c		\
-				utils.c
+				print.c			\
+				thread.c		\
+				time.c
 				
 SRCS		=	$(addprefix $(SRC_PATH)/, $(SRC_NAME))
 OBJS		=	$(patsubst $(SRC_PATH)/%.c, $(OBJ_PATH)/%.o, $(SRCS))

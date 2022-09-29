@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 12:18:42 by bshintak          #+#    #+#             */
-/*   Updated: 2022/08/26 16:51:15 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/09/29 12:46:35 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,4 @@ int	main(int argc, char **argv)
 	}
 	separate_arguments(&wtv, argc, argv);
 	create_threads(&wtv);
-	// death_check(&wtv);
 }
