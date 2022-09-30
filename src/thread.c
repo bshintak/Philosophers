@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 12:50:46 by bshintak          #+#    #+#             */
-/*   Updated: 2022/09/29 16:43:40 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/09/30 15:53:43 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,6 @@ void	*routine_function(void *arg)
 	{
 		if (eat_check(wtv))
 			break ;
-		// if (wtv->all_ate == 1)
-		// 	break ;
 		if (print_info(wtv, SLEEP))
 			break ;
 		ft_usleep(wtv->arg->t_sleep, wtv);

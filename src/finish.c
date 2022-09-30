@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 13:08:02 by bshintak          #+#    #+#             */
-/*   Updated: 2022/09/29 15:28:19 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/09/30 12:33:27 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	errors(char *str)
 	while (str[i])
 		i++;
 	write(2, str, i);
-	return (-1);
+	return (1);
 }
 
 int	finish_program(t_ph *wtv)

@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/26 16:31:34 by bshintak          #+#    #+#             */
-/*   Updated: 2022/09/29 15:30:08 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/09/30 16:13:26 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,12 +51,23 @@ int	eat_2(t_ph *wtv)
 int	eat_check(t_ph *wtv)
 {
 	if (wtv->philo_id % 2 == 0)
-		eat_1(wtv);
+	{
+		if (eat_1(wtv) == 1)
+			return (1);
+	}
 	else
-		eat_2(wtv);
+	{
+		if (eat_2(wtv) == 1)
+			return (1);
+	}
 	print_info_eat(wtv, EAT);
 	ft_usleep(wtv->arg->t_eat, wtv);
-	pthread_mutex_unlock(wtv->l_fork);
-	pthread_mutex_unlock(&wtv->r_fork);
+	if (wtv->arg->n_philo != 1)
+	{
+		pthread_mutex_unlock(wtv->l_fork);
+		pthread_mutex_unlock(&wtv->r_fork);
+	}
+	else
+		return (1);
 	return (0);
 }

@@ -6,19 +6,19 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 13:05:31 by bshintak          #+#    #+#             */
-/*   Updated: 2022/09/29 17:21:46 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/09/30 15:15:52 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philosophers.h"
 
-int one_philo(t_ph *wtv)
+int	one_philo(t_ph *wtv)
 {
 	if (wtv->arg->n_philo == 1)
 	{
 		usleep(wtv->arg->t_die * 1000);
 		printf("%lld %d %s\n", getting_time() - wtv->arg->first_time,
-				wtv->philo_id, DIED);
+			wtv->philo_id, DIED);
 		wtv->arg->died = 1;
 		pthread_mutex_unlock(&wtv->arg->death);
 		return (1);
@@ -37,7 +37,7 @@ void	death_check(t_ph *wtv)
 		while (++i < wtv->arg->n_philo && wtv->arg->died != 1)
 		{
 			if (pres_less_past(wtv[i].t_of_last_meal,
-					getting_time()) > wtv->arg->t_die)
+					getting_time()) >= wtv->arg->t_die)
 			{
 				printf("%lld %d %s\n", getting_time() - wtv->arg->first_time,
 					wtv[i].philo_id, DIED);

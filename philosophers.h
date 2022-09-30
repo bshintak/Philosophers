@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 12:14:36 by bshintak          #+#    #+#             */
-/*   Updated: 2022/09/29 17:18:51 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/09/30 12:36:52 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ int			ft_atoi(const char *str);
 
 /*		INIT		*/
 t_ph		*init_philo(t_philo *idk);
-void		separate_arguments(t_philo	*wtv, int argc, char **argv);
+int			separate_arguments(t_philo	*wtv, int argc, char **argv);
 void		init_fork_mutex(t_philo *wtv, t_ph *philos);
 
 /*		THREAD		*/
