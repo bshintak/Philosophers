@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 12:14:36 by bshintak          #+#    #+#             */
-/*   Updated: 2022/09/29 15:26:16 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/09/29 17:18:51 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,9 @@ typedef struct s_philo
 	int					t_sleep;
 	int					n_t_philo_must_eat;
 	long long			first_time;
+	pthread_mutex_t		print;
 	pthread_mutex_t		death;
+	pthread_mutex_t		meal_check;
 }				t_philo;
 
 /*		LIBFT		*/

@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 12:18:37 by bshintak          #+#    #+#             */
-/*   Updated: 2022/09/29 15:32:45 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/09/29 16:47:24 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,10 +50,6 @@ void	init_fork_mutex(t_philo *wtv, t_ph *philos)
 	int	i;
 
 	i = -1;
-	/*PTHREAD MUTEX INIT
-		- first arg: ponteiro para uma variavel do tipo pthread_mutex_t
-		- second arg: um ponteiro para especificos atributos do mutex
-			> não temos que nos preocupar com esse argumento, então NULL*/
 	while (++i < wtv->n_philo)
 	{
 		pthread_mutex_init(&philos[i].r_fork, NULL);

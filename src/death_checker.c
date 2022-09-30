@@ -6,11 +6,25 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 13:05:31 by bshintak          #+#    #+#             */
-/*   Updated: 2022/09/29 15:27:47 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/09/29 17:21:46 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philosophers.h"
+
+int one_philo(t_ph *wtv)
+{
+	if (wtv->arg->n_philo == 1)
+	{
+		usleep(wtv->arg->t_die * 1000);
+		printf("%lld %d %s\n", getting_time() - wtv->arg->first_time,
+				wtv->philo_id, DIED);
+		wtv->arg->died = 1;
+		pthread_mutex_unlock(&wtv->arg->death);
+		return (1);
+	}
+	return (0);
+}
 
 void	death_check(t_ph *wtv)
 {
@@ -32,6 +46,8 @@ void	death_check(t_ph *wtv)
 				return ;
 			}
 			if (t_all_eat(wtv) == 1)
+				return ;
+			if (one_philo(wtv) == 1)
 				return ;
 		}
 		pthread_mutex_unlock(&wtv->arg->death);
