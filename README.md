@@ -1,4 +1,4 @@
-#Philosophers
+# Philosophers
 🍝
 
 Philosophers is a 42 school project
