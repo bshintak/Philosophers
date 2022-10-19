@@ -18,6 +18,6 @@ The instructions were given in the [subject](https://github.com/bshintak/Philoso
 * **```time_to_sleep```**: The time a philosopher will spend sleeping.
 * **```number_of_times_each_philosopher_must_eat```**: If all philosophers have eaten at least number_of_times_each_philosopher_must_eat times, the simulation stops. If not specified, the simulation stops when a philosopher dies (optional argument.
 
-<p align="center">
+<p align="left">
   <img src=https://raw.githubusercontent.com/bshintak/Philosophers/main/philosophers.png />
 </p>
