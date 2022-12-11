@@ -4,7 +4,7 @@
  
  [![Stars](https://img.shields.io/github/stars/bshintak/Philosophers?color=ffff00&label=Stars&logo=Stars&style=?style=flat)](https://github.com/bshintak/Philosophers)
  [![Size](https://img.shields.io/github/repo-size/bshintak/Philosophers?color=blue&label=Size&logo=Size&style=?style=flat)](https://github.com/bshintak/Philosophers)
- ![Lines of code](https://img.shields.io/tokei/lines/github/bshintak/Philosopherst?color=blueviolet)
+ ![Lines of code](https://img.shields.io/tokei/lines/github/bshintak/Philosophers?color=blueviolet)
  [![Activity](https://img.shields.io/github/last-commit/bshintak/Philosophers?color=red&label=Last%20Commit&style=flat)](https://github.com/bshintak/Philosophers)
 
 🍝 Philosophers is a 42 school project.
