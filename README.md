@@ -1,10 +1,11 @@
 # Philosophers
 
-[![Intro](https://img.shields.io/badge/Cursus-Push_Swap-success?style=for-the-badge&logo=42)](https://github.com/bshintak/Push_Swap)
+[![Intro](https://img.shields.io/badge/Cursus-Philosophers-success?style=for-the-badge&logo=42)](https://github.com/bshintak/Philosophers)
  
- [![Stars](https://img.shields.io/github/stars/bshintak/Push_Swap?color=ffff00&label=Stars&logo=Stars&style=?style=flat)](https://github.com/bshintak/Push_Swap)
- [![Size](https://img.shields.io/github/repo-size/bshintak/Push_Swap?color=blue&label=Size&logo=Size&style=?style=flat)](https://github.com/bshintak/Push_Swap)
- [![Activity](https://img.shields.io/github/last-commit/bshintak/Push_Swap?color=red&label=Last%20Commit&style=flat)](https://github.com/bshintak/Push_Swap)
+ [![Stars](https://img.shields.io/github/stars/bshintak/Philosophers?color=ffff00&label=Stars&logo=Stars&style=?style=flat)](https://github.com/bshintak/Philosophers)
+ [![Size](https://img.shields.io/github/repo-size/bshintak/Philosophers?color=blue&label=Size&logo=Size&style=?style=flat)](https://github.com/bshintak/Philosophers)
+ ![Lines of code](https://img.shields.io/tokei/lines/github/bshintak/Philosopherst?color=blueviolet)
+ [![Activity](https://img.shields.io/github/last-commit/bshintak/Philosophers?color=red&label=Last%20Commit&style=flat)](https://github.com/bshintak/Philosophers)
 
 🍝 Philosophers is a 42 school project.
 
